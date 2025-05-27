@@ -1,0 +1,141 @@
+[2025-05-27 14:36:00] Starting Propeller scraper...
+[2025-05-27 14:36:00] Loaded environment variables from .env
+[2025-05-27 14:36:00] ERROR: Scraper failed with exit code 127
+[2025-05-27 14:36:00] Starting Propeller scraper...
+[2025-05-27 14:36:00] Loaded environment variables from .env
+[2025-05-27 14:36:00] ERROR: Scraper failed with exit code 127
+[2025-05-27 14:37:00] Starting Propeller scraper...
+[2025-05-27 14:37:00] Loaded environment variables from .env
+[2025-05-27 14:37:00] ERROR: Scraper failed with exit code 127
+[2025-05-27 14:37:09] Starting Propeller scraper...
+[2025-05-27 14:37:09] Loaded environment variables from .env
+[2025-05-27 14:37:09] ERROR: Scraper failed with exit code 127
+[2025-05-27 14:37:19] Starting Propeller scraper...
+[2025-05-27 14:37:19] Loaded environment variables from .env
+[2025-05-27 14:37:19] ERROR: Scraper failed with exit code 127
+[2025-05-27 14:37:30] Starting Propeller scraper...
+[2025-05-27 14:37:30] Loaded environment variables from .env
+[2025-05-27 14:37:30] ERROR: Scraper failed with exit code 127
+[2025-05-27 14:38:00] Starting Propeller scraper...
+[2025-05-27 14:38:00] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:38:04] Scraper completed successfully
+[2025-05-27 14:38:05] Starting Propeller scraper...
+[2025-05-27 14:38:05] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:38:07] Scraper completed successfully
+[2025-05-27 14:39:00] Starting Propeller scraper...
+[2025-05-27 14:39:00] Loaded environment variables from .env
+[2025-05-27 14:39:00] ERROR: Scraper failed with exit code 1
+[2025-05-27 14:40:00] Starting Propeller scraper...
+[2025-05-27 14:40:00] Loaded environment variables from .env
+[2025-05-27 14:40:00] ERROR: Scraper failed with exit code 1
+[2025-05-27 14:41:00] Starting Propeller scraper...
+[2025-05-27 14:41:00] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:41:02] Scraper completed successfully
+[2025-05-27 14:42:00] Starting Propeller scraper...
+[2025-05-27 14:42:00] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+Found 1 new show(s) in target cities:
+  - Get this reward Earn a Pair of Tickets To See Remy Bond at a Show Near You 500 Points (2025-05-27)
+    • 6/19/25 @ House of Blues San Diego - Voodoo Room | San Diego, CA - ✓ Available
+    • 6/26/25 @ The Independent | San Francisco, CA - ✓ Available
+    • 6/26/25 @ The Independent | San Francisco, CA - ✓ Available
+    • 6/27/25 @ El Rey Theatre | Los Angeles, CA - ✓ Available
+
+==================================================
+🎬 NEW SHOW ALERT - 2025-05-27 14:42
+==================================================
+Title: Get this reward Earn a Pair of Tickets To See Remy Bond at a Show Near You 500 Points
+Details: Get this rewardEarn a Pair of Tickets To See Remy Bond at a Show Near You500 Points...
+🎯 Target City Locations:
+  • 6/19/25 @ House of Blues San Diego - Voodoo Room | San Diego, CA - ✓ Available
+  • 6/26/25 @ The Independent | San Francisco, CA - ✓ Available
+  • 6/26/25 @ The Independent | San Francisco, CA - ✓ Available
+  • 6/27/25 @ El Rey Theatre | Los Angeles, CA - ✓ Available
+==================================================
+
+✓ Telegram notification sent
+Total shows tracked: 79
+[2025-05-27 14:42:03] Scraper completed successfully
+[2025-05-27 14:43:00] Starting Propeller scraper...
+[2025-05-27 14:43:00] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:43:03] Scraper completed successfully
+[2025-05-27 14:44:00] Starting Propeller scraper...
+[2025-05-27 14:44:00] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:44:02] Scraper completed successfully
+[2025-05-27 14:45:00] Starting Propeller scraper...
+[2025-05-27 14:45:00] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:45:03] Scraper completed successfully
+[2025-05-27 14:46:00] Starting Propeller scraper...
+[2025-05-27 14:46:00] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:46:03] Scraper completed successfully
+[2025-05-27 14:47:00] Starting Propeller scraper...
+[2025-05-27 14:47:00] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:47:02] Scraper completed successfully
+[2025-05-27 14:48:00] Starting Propeller scraper...
+[2025-05-27 14:48:01] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:48:03] Scraper completed successfully
+[2025-05-27 14:49:01] Starting Propeller scraper...
+[2025-05-27 14:49:01] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:49:04] Scraper completed successfully
+[2025-05-27 14:50:00] Starting Propeller scraper...
+[2025-05-27 14:50:00] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:50:02] Scraper completed successfully
+[2025-05-27 14:51:00] Starting Propeller scraper...
+[2025-05-27 14:51:00] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:51:03] Scraper completed successfully
+[2025-05-27 14:52:00] Starting Propeller scraper...
+[2025-05-27 14:52:00] Loaded environment variables from .env
+Scraping https://www.propeller.la/points-rewards...
+Found 81 items
+No new shows found in target cities (Los Angeles, San Francisco, Boulder)
+Total shows tracked: 79
+[2025-05-27 14:52:02] Scraper completed successfully

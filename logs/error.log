@@ -1,0 +1,58 @@
+/Users/c2k/Projects/propeller-scrape/run_scraper.sh: line 51: timeout: command not found
+[2025-05-27 14:36:00] Scraper failed with exit code 127
+/Users/c2k/Projects/propeller-scrape/run_scraper.sh: line 51: timeout: command not found
+[2025-05-27 14:36:00] Scraper failed with exit code 127
+/Users/c2k/Projects/propeller-scrape/run_scraper.sh: line 51: timeout: command not found
+[2025-05-27 14:37:00] Scraper failed with exit code 127
+/Users/c2k/Projects/propeller-scrape/run_scraper.sh: line 51: timeout: command not found
+[2025-05-27 14:37:09] Scraper failed with exit code 127
+/Users/c2k/Projects/propeller-scrape/run_scraper.sh: line 51: timeout: command not found
+[2025-05-27 14:37:19] Scraper failed with exit code 127
+/Users/c2k/Projects/propeller-scrape/run_scraper.sh: line 51: timeout: command not found
+[2025-05-27 14:37:30] Scraper failed with exit code 127
+Traceback (most recent call last):
+  File "/Users/c2k/Projects/propeller-scrape/src/scraper.py", line 299, in <module>
+    main()
+  File "/Users/c2k/Projects/propeller-scrape/src/scraper.py", line 272, in main
+    existing_shows = load_existing_shows()
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/c2k/Projects/propeller-scrape/src/scraper.py", line 24, in load_existing_shows
+    return json.load(f)
+           ^^^^^^^^^^^^
+  File "/Users/c2k/.local/share/uv/python/cpython-3.12.8-macos-aarch64-none/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/Users/c2k/.local/share/uv/python/cpython-3.12.8-macos-aarch64-none/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/c2k/.local/share/uv/python/cpython-3.12.8-macos-aarch64-none/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/c2k/.local/share/uv/python/cpython-3.12.8-macos-aarch64-none/lib/python3.12/json/decoder.py", line 354, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 774 column 1 (char 40584)
+[2025-05-27 14:39:00] Scraper failed with exit code 1
+Traceback (most recent call last):
+  File "/Users/c2k/Projects/propeller-scrape/src/scraper.py", line 299, in <module>
+    main()
+  File "/Users/c2k/Projects/propeller-scrape/src/scraper.py", line 272, in main
+    existing_shows = load_existing_shows()
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/c2k/Projects/propeller-scrape/src/scraper.py", line 24, in load_existing_shows
+    return json.load(f)
+           ^^^^^^^^^^^^
+  File "/Users/c2k/.local/share/uv/python/cpython-3.12.8-macos-aarch64-none/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/Users/c2k/.local/share/uv/python/cpython-3.12.8-macos-aarch64-none/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/c2k/.local/share/uv/python/cpython-3.12.8-macos-aarch64-none/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/c2k/.local/share/uv/python/cpython-3.12.8-macos-aarch64-none/lib/python3.12/json/decoder.py", line 354, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 774 column 1 (char 40584)
+[2025-05-27 14:40:00] Scraper failed with exit code 1
