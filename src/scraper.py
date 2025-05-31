@@ -214,11 +214,20 @@ def check_show_locations(show_url):
         for city_name, city_variants in target_cities.items():
             for variant in city_variants:
                 if variant in location_lower:
-                    # Extract more specific location info
+                    # Check availability using data-qty attribute (0 = sold out, 1+ = available)
+                    data_qty = element.get('data-qty', '0')
+                    is_available = data_qty != '0' and data_qty != ''
+                    
+                    # Also check text content for sold out indicators as fallback
+                    if is_available:
+                        is_available = not any(unavailable_term in location_lower for unavailable_term in [
+                            'sold out', 'fully redeemed', 'unavailable', 'no longer available'
+                        ])
+                    
                     matching_locations.append({
                         'raw_text': location_text,
                         'city': city_name,
-                        'available': 'sold out' not in location_lower and 'fully redeemed' not in location_lower
+                        'available': is_available
                     })
                     break  # Don't check other variants once we find a match
     
@@ -232,13 +241,21 @@ def detect_new_shows(current_shows, existing_shows):
         if show_id not in existing_shows:
             # Only add to new_shows if it's actually a concert/show
             if is_show_or_concert(show):
-                # Check for target city locations
-                target_locations = check_show_locations(show['url'])
-                show['target_locations'] = target_locations
-                
-                # Only notify if there are shows in target cities
-                if target_locations:
-                    new_shows.append(show)
+                # Skip if the title itself indicates it's sold out
+                if any(sold_out_term in show['title'].lower() for sold_out_term in [
+                    'sold out', 'fully redeemed', 'unavailable'
+                ]):
+                    show['target_locations'] = []
+                else:
+                    # Check for target city locations
+                    target_locations = check_show_locations(show['url'])
+                    show['target_locations'] = target_locations
+                    
+                    # Only notify if there are shows in target cities that are available
+                    available_locations = [loc for loc in target_locations if loc.get('available', True)]
+                    if available_locations:
+                        show['target_locations'] = available_locations  # Only include available locations
+                        new_shows.append(show)
             
             # Still track all items in existing_shows, but mark if it's a show
             existing_shows[show_id] = {
@@ -259,9 +276,10 @@ def detect_new_shows(current_shows, existing_shows):
                 target_locations = check_show_locations(show['url'])
                 existing_show['target_locations'] = target_locations
                 
-                # If we find target locations, add to new_shows for notification
-                if target_locations:
-                    show['target_locations'] = target_locations
+                # If we find available target locations, add to new_shows for notification
+                available_locations = [loc for loc in target_locations if loc.get('available', True)]
+                if available_locations:
+                    show['target_locations'] = available_locations  # Only include available locations
                     new_shows.append(show)
     
     return new_shows
@@ -289,6 +307,12 @@ def main():
         
         # Send notifications
         notify(new_shows)
+        
+        # Mark shows as notified
+        for show in new_shows:
+            show_id = f"{show['title']}_{show['date']}"
+            if show_id in existing_shows:
+                existing_shows[show_id]['notified'] = True
     else:
         print("No new shows found in target cities (Los Angeles, San Francisco, Boulder)")
     
