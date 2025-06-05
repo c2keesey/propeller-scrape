@@ -80,7 +80,7 @@ def scrape_propeller_shows():
                 if url and not url.startswith('http'):
                     url = f"https://www.propeller.la{url}"
                 
-                # Create unique ID
+                # Create unique ID based on title and URL (not date to avoid midnight duplication)
                 show_id = f"{title}_{url}"
                 if show_id not in found_items and title:
                     found_items.add(show_id)
@@ -237,7 +237,7 @@ def detect_new_shows(current_shows, existing_shows):
     new_shows = []
     
     for show in current_shows:
-        show_id = f"{show['title']}_{show['date']}"
+        show_id = f"{show['title']}_{show['url']}"
         if show_id not in existing_shows:
             # Only add to new_shows if it's actually a concert/show
             if is_show_or_concert(show):
@@ -310,7 +310,7 @@ def main():
         
         # Mark shows as notified
         for show in new_shows:
-            show_id = f"{show['title']}_{show['date']}"
+            show_id = f"{show['title']}_{show['url']}"
             if show_id in existing_shows:
                 existing_shows[show_id]['notified'] = True
     else:
