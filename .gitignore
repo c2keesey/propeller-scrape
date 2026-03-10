@@ -20,6 +20,13 @@ data/
 *.swo
 *~
 
+# Secrets
+.env
+
+# Bot state
+.bot_offset
+.bot_session
+
 # OS
 .DS_Store
 Thumbs.db

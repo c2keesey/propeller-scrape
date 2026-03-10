@@ -3,6 +3,9 @@
 # Propeller Scraper Automation Script
 # This script is designed to run via cron and handles logging and error reporting
 
+# Ensure uv/claude are on PATH
+export PATH="$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin:$PATH"
+
 # Set up paths
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LOG_FILE="$SCRIPT_DIR/logs/scraper.log"
@@ -48,7 +51,7 @@ if [ -f ".env" ]; then
 fi
 
 # Run the scraper
-/opt/homebrew/bin/uv run python src/scraper.py >> "$LOG_FILE" 2>> "$ERROR_LOG"
+uv run python src/scraper.py >> "$LOG_FILE" 2>> "$ERROR_LOG"
 EXIT_CODE=$?
 
 # Check if script completed successfully
